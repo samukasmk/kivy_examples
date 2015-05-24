@@ -1,0 +1,13 @@
+<SimpleWidget>:
+    orientation: 'vertical'
+    padding: 100
+    spacing: 80
+
+    Label:
+        font_size: 25
+        text: "Write some text bellow and look your console:"
+
+    TextInput:
+        id: my_text_input
+        text: 'some text'
+        on_text: root.on_text_update(self.text)
