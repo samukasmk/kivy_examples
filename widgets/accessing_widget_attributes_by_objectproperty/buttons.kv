@@ -1,0 +1,10 @@
+<MyFirstWidget>:
+    # both these variables can be the same name and this doesn't lead to
+    # an issue with uniqueness as the id is only accessible in kv.
+    minha_ref: minha_ref
+    Button:
+        id: f_but
+    TextInput:
+        id: minha_ref
+        text: f_but.state
+        on_text: root.check_status(f_but)
